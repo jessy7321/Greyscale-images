@@ -1,0 +1,19 @@
+var o_img, d_img;
+
+function upload() {
+  var imgcanvas = document.getElementById("o_can");
+  var fileinput = document.getElementById("finput");
+  o_img = d_img = new SimpleImage(fileinput);
+  o_img.drawTo(imgcanvas);
+}
+
+function makeGray() {
+  for (var pixel of d_img.values()) {
+    var avg = (pixel.getRed() + pixel.getGreen() + pixel.getBlue()) / 3;
+    pixel.setRed(avg);
+    pixel.setGreen(avg);
+    pixel.setBlue(avg);
+  }
+  var imgcanvas = document.getElementById("d_can");
+  d_img.drawTo(imgcanvas);
+}
