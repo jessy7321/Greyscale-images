@@ -1,0 +1,20 @@
+h1 {
+  color: darkslategrey;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+canvas {
+  height: 200px;
+  border: 5px solid grey;
+}
+
+p {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 0px;
+}
+
+input {
+  font-size: 14pt;
+}
